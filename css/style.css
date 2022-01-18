@@ -1,0 +1,46 @@
+/* imports */
+
+@import url("./main.css");
+@import url("./gallery.css");
+@import url("./knowUs.css");
+@import url("./form.css");
+@import url("./deliverySlogan.css");
+@import url("./footer.css");
+
+:root{
+	--firstColor:   #97DFFc;
+	--secondColor:  #613DC1;
+	--thirdColor:   #4E148C;
+	--fourthColor:  #2C0735;
+}
+*{
+	box-sizing: content-box;
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	overflow-x: hidden;
+	width: 100vw;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+a{
+	text-decoration: none;
+}
+.textViolet{
+	color: var(--fourthColor);
+}
+.textRed{
+	color: #f00;
+	font-size: 3rem;
+}
+.italic{
+	color: var(--secondColor);
+	font-style: italic;
+	font-size: 4.7rem;
+	margin: 0 0 0 4rem;
+}

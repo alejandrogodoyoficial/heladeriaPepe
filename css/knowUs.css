@@ -1,0 +1,66 @@
+.knowUs{
+	display: grid;
+	grid-template-columns: auto auto;
+	margin-top: 10rem;
+}
+.knowUsH2{
+	background-image: linear-gradient(var(--firstColor), #fff7);
+	height: 100%;
+	text-align: center;
+	width: 50vw;
+
+}
+.knowUsH2 h2{
+	color: var(--fourthColor);
+	font-size: 5rem;
+	margin: 15rem auto;
+	padding: 1rem;
+}
+.knowUsImg{
+	height: 120vh;
+	object-fit: cover;
+	width: 50vw;
+}
+
+@media(max-width: 1100px){
+	.knowUs{
+		grid-template-areas: "one"
+							 "two";
+	}
+	.knowUsH2{
+		width: 100%;
+	}
+	.knowUsH2 h2{
+		grid-area: one;
+		font-size: 3rem;
+		margin: 15rem 0 15rem 1rem;
+		padding: 1rem;
+	}
+	.knowUsImg{
+		grid-area: two;
+		height: 100vh;
+		object-fit: cover;
+		width: 100%;
+	}
+}
+
+@media(max-width: 600px){
+	.knowUs{
+		grid-template-areas: "one"
+							 "two";
+	}
+	.knowUsH2{
+		width: 100%;
+	}
+	.knowUsH2 h2{
+		grid-area: one;
+		font-size: 2rem;
+		margin: 15rem 1rem 15rem 0;
+	}
+	.knowUsImg{
+		grid-area: two;
+		height: 100vh;
+		object-fit: cover;
+		width: 100%;
+	}
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Helados Pepe</title>
+
+	<link rel="icon" type="image/x-icon" href="./img/logo.png">
+
+	<link rel="stylesheet" href="./css/style.css">
+	<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>	
+<body>
+
+	<!-- main -->
+
+	<main id="main" class="main">
+		<h1>No se puede comprar la <span class="textRed">felicidad</span> <br>
+		pero si se puede comprar <span class="textRed">helado</span> <br>
+		<span class="italic">que es casi lo mismo</span></h1>
+	</main>
+
+	<div class="fixedMark">
+		<a href="#main"><h2 class="heladosPepe">Helados<span>Pepe</span></h2></a>
+	</div>
+
+
+	<!-- gallery -->
+
+	<!-- <h2 class="">Encontrar...<br>Descubrir...<br>Disfrutar...</h2> -->
+	<h2 class="headerAnimate">
+		<spam class="typed"></spam>
+	</h2>
+
+
+	<section class="gallery">
+		<img class="galleryImg" src="./img/img1.jpg" alt="">
+		<img class="galleryImg" src="./img/img2.jpg" alt="">
+		<img class="galleryImg" src="./img/img3.jpg" alt="">
+		<img class="galleryImg" src="./img/img4.jpg" alt="">
+		<img class="galleryImg" src="./img/img5.jpg" alt="">
+		<img class="galleryImg" src="./img/img6.jpg" alt="">
+		<img class="galleryImg" src="./img/img7.jpg" alt="">
+		<img class="galleryImg" src="./img/img8.jpg" alt="">
+		<img class="galleryImg" src="./img/img9.jpg" alt="">
+	</section>
+
+
+	<!-- knowUs -->
+
+	<section class="knowUs">
+		<div class="knowUsH2">
+			<h2>Visítanos en cualquiera de nuestras sucursales</h2>
+		</div>
+		<img class="knowUsImg" src="./img/img10.jpg" alt="">
+	</section>
+
+	<!-- form -->
+
+	<div class="deliverySlogan">
+		<h2>o</h2>
+		<p>Hace tu pedido desde acá</p>
+		<p>Simple, practico y sobre todo... <br><span>CÓMODO</span></p>
+	</div>
+
+	<form action="" id="deliveryForm" onsubmit="return false">
+		<label for="name">Nombre:</label>
+		<input type="text" id="name" required>
+		<label for="addres">Dirección:</label>
+		<input type="text" id="addres" required>
+		<label for="phoneNumber">Numero de teléfono:</label>
+		<input type="number" id="phoneNumber" required>
+		<label for="quantity">Cuanto quieres?</label>
+		<select id="quantity" required>
+			<option disabled selected>Elige de cuanto quieres</option>
+			<option value="oneKg">1Kg</option>
+			<option value="halfKg">1/2Kg</option>
+			<option value="quarterKg">1/4Kg</option>
+		</select>
+		<label for="price">El precio es:</label>
+		<input type="text" id="price" disabled>
+
+		<select name="flavorsNumber" id="flavorsNumber" required></select>
+
+		<div id="iceCreamsContainer">
+		</div>
+
+		<input type="submit" id="button">
+	</form>
+
+	<div class="orderContainer" id="orderContainer">
+	</div>
+
+	<footer>
+		<h2>Todos los derechos reservados a HeladosPepe S.A</h2>
+		<nav>
+			<a href="#main">Inicio</a>
+			<a href="">Abre tu propio local</a>
+			<a href="">Abre tu propio local</a>
+			<a href="">Términos y condiciones</a>
+		</nav>
+	</footer>
+
+	<!-- typejs.org JavaScript library -->
+
+	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+
+
+	<script src="./js/animation.js"></script>
+	<script src="./js/main.js"></script>
+</body>
+</html>

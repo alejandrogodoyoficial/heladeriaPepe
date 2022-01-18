@@ -1,0 +1,49 @@
+.deliverySlogan h2{
+	color: var(--secondColor);
+	font-size: 10rem;
+	margin-top: 4rem;
+	text-align: center;
+}
+.deliverySlogan p{
+	color: var(--fourthColor);
+	font-size: 5rem;
+	text-align: center;
+}
+.deliverySlogan p:last-child{
+	font-size: 3.5rem;
+	margin-top: 2rem;
+}
+.deliverySlogan p > span{
+	color: #f00;
+	font-size: 4rem;
+}
+
+@media (max-width: 1100px){
+	.deliverySlogan h2{
+		font-size: 10rem;
+	}
+	.deliverySlogan p{
+		font-size: 5rem;
+	}
+	.deliverySlogan p:last-child{
+		font-size: 3.5rem;
+	}
+	.deliverySlogan p > span{
+		font-size: 4rem;
+	}
+}
+
+@media (max-width: 700px){
+	.deliverySlogan h2{
+		font-size: 6rem;
+	}
+	.deliverySlogan p{
+		font-size: 2rem;
+	}
+	.deliverySlogan p:last-child{
+		font-size: 1.5rem;
+	}
+	.deliverySlogan p > span{
+		font-size: 2rem;
+	}
+}
